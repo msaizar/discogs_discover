@@ -2,7 +2,7 @@ Discogs Discover
 ================
 
 
-`
+```
 usage: discogs_discover.py [-h] artist
 
 positional arguments:  
@@ -10,13 +10,13 @@ positional arguments:
 
 optional arguments:  
     -h, --help  show this help message and exit
-`  
+```  
   
   
 Example
 -------
 
-`
+```
 $ python discogs_discover.py "Ray Okpara"
 
 Ray Okpara has released records on the following labels:
@@ -30,4 +30,4 @@ Metroline Limited - http://www.discogs.com/label/Metroline+Limited
 Serkal - http://www.discogs.com/label/Serkal
 Niveous Records - http://www.discogs.com/label/Niveous+Records
 Kiara Records - http://www.discogs.com/label/Kiara+Records
-`
+```
