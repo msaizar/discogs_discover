@@ -2,6 +2,13 @@ Discogs Discover
 ================
 
 
+Discover labels, artists and releases!
+
+1) Select an artist
+2) Get a list of all the labels this artist has released a record on.
+
+
+
 ```
 usage: discogs_discover.py [-h] artist
 
