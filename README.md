@@ -5,18 +5,17 @@ Discogs Discover
 Discover labels, artists and releases!
 
 1) Select an artist
-2) Get a list of all the labels this artist has released a record on.
+2) Get a list of all the labels this artist has released a 12" record on.
 
 
 
 ```
-usage: discogs_discover.py [-h] artist
+usage: discogs_discover.py [-h] [-a ARTIST | -i]
 
-positional arguments:  
-    artist      Artist you want to discover
-
-optional arguments:  
-    -h, --help  show this help message and exit
+optional arguments:
+    -h, --help            show this help message and exit
+    -a ARTIST, --artist ARTIST
+    -i, --interactive
 ```  
   
   
