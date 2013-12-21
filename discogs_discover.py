@@ -3,10 +3,13 @@ import requests
 import urllib
 import os
 import platform
+import ConfigParser
 
 
-api_url = 'http://api.discogs.com'
-www_url = 'http://www.discogs.com'
+config = ConfigParser.SafeConfigParser({'api_url': 'http://api.discogs.com', 'www_url': 'http://www.discogs.com'})
+config.read('default.cfg')
+api_url = config.get('urls', 'api_url')
+www_url = config.get('urls', 'www_url')
 
 def get_and_print_artist_info(artist_name):
     labels = set()
@@ -35,6 +38,7 @@ def get_and_print_artist_info(artist_name):
 
     
 def main():
+    
     system = platform.system()
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group(required=False)
